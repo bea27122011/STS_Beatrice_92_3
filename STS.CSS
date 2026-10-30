@@ -1,0 +1,20 @@
+body{
+    background-image:url(universal.jpg);
+    background-size:cover ;
+    background-position:center;
+}
+h2{
+    color: rgb(60, 36, 3);
+    background-color: rgb(241, 241, 150);
+}
+h2:hover {
+    color: coral;
+}
+h3{
+    color:rgb(255, 223, 211);
+    background-color: rgb(119, 190, 190);
+}
+div.foto{
+    height: 10px;
+    width: auto;
+}

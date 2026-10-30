@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* style header */
+.header{
+    background-color:aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* style untuk menu */
+.topnav{
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+/* style untuk menu link */
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* style untuk menu link ketika di hover */
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    background-image:url(.vscode/4611f0242d127c47a56e9f051e5b14c2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.photo{
+  width: 200px;
+  height:auto
+}
+h2{
+    color:cadetblue;
+    background-color: burlywood;
+}
+h1.b{background-color: cornsilk;
+    color:cornflowerblue;
+}
+h3{background-color: antiquewhite;
+   color:darkseagreen;
+   font-size: 50px;
+}
+
+
+.info{
+  margin: 30px auto;
+  display: flex;               
+  width:70%;
+  padding:20px; 
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  border-radius:5px ;
+  border-color: bisque;
+  background-color: rgba(210, 189, 124, 0.71);
+}
+.content{
+  gap:60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.isi{
+justify-content: left;
+text-align: left;
+}
+.foto{
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+justify-content: center;
+  border-color: whitesmoke;
+  border: 3px solid white;
+}
+
+.foto img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+   transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+.foto img.top{
+  opacity:1;
+  z-index: 2;
+}
+.foto:hover img.top{
+  opacity:0;
+  transform: scale(1.1)
+}
+
+.foto img.bottom{
+  opacity:0;
+  z-index: 1;
+}
+
+.foto:hover img.bottom{
+  opacity: 1;
+  transform: scale(1.1)
+}
+
+div.makanan{
+  display: flex;             
+  flex-direction: row;      
+  justify-content: center;   
+  gap: 15px;                 
+}
+
+div.makanan img {
+  width: 200px;              
+  height: auto;             
+}
+
+.mtk {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+.mtk:hover{
+   height:auto;
+    width:auto;
+    background-color: rgb(140, 193, 254);
+    box-shadow: 15px 15px 10px rgb(18, 116, 191);
+}
+
+.mtka {
+  width: 150px;           
+  height: auto;
+}
+
+.VT {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px; 
+}
+
+.VT:hover{
+   height:auto;
+    width:auto;
+    background-color: rgb(241, 237, 231);
+    box-shadow: 15px 15px 10px rgba(130, 190, 243, 0.922);
+}
+.VTA {
+  width: 150px;           
+  height: auto;
+}
+.gd {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.gd:hover{
+   height:auto;
+    width:auto;
+    background-color: rgb(140, 193, 254);
+    box-shadow: 15px 15px 10px rgb(18, 116, 191);
+}
+
+.gda {
+  width: 150px;           
+  height: auto;
+}
+
+div.freetime {
+  display: flex;             
+  flex-direction: row;       
+  justify-content: center;   
+  gap: 15px;                 
+}
+
+div.freetime img {
+  width: 200px;              
+  height: auto;   
+            
+}
+
+.books {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.books:hover{
+   height:auto;
+   width:auto;
+   background-color: rgb(241, 237, 231);
+   box-shadow: 15px 15px 10px rgba(130, 190, 243, 0.922);
+}
+
+
+.booksa {
+  width: 150px;           
+  height: auto;
+}
+
+.OR {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.OR:hover{
+   height:auto;
+    width:auto;
+    background-color: rgb(140, 193, 254);
+    box-shadow: 15px 15px 10px rgb(18, 116, 191);
+}
+
+.ORA {
+  width: 150px;           
+  height: auto;
+}
+
+.SIN {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.SIN:hover{
+   height:auto;
+   width:auto;
+   background-color: rgb(241, 237, 231);
+   box-shadow: 15px 15px 10px rgba(130, 190, 243, 0.922);
+}
+
+.SINA {
+  width: 150px;           
+  height: auto;
+}
+
+div.cities {
+  display: flex;             
+  flex-direction: row;       
+  justify-content: center;   
+  gap: 15px;                 
+}
+
+div.cities img {
+  width: 200px;              
+  height: auto;   
+            
+}
+
+.Amsterdam {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.Amsterdam:hover{
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.Amsterdama {
+  width: 150px;           
+  height: auto;
+}
+
+.fkk {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.fkk:hover {
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.fkka {
+  width: 150px;           
+  height: auto;
+}
+
+.NYC {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.NYC:hover {
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.NYCA {
+  width: 150px;           
+  height: auto;
+}
+
+div.movies {
+  display: flex;             
+  flex-direction: row;       
+  justify-content: center;   
+  gap: 15px;                 
+}
+
+div.movies img {
+  width: 200px;              
+  height: auto;              
+}
+
+.moviea {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.moviea:hover{
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.movieab {
+  width: 150px;           
+  height: auto;
+}
+
+.talb {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.talb:hover{
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.talba {
+  width: 150px;           
+  height: auto;
+}
+
+.CRA {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;             
+  padding: 15px;
+  border: 1px solid #55330d;
+  border-radius: 8px;
+}
+
+.CRA:hover{
+ height:auto;
+ width:auto;
+ background-color: burlywood;
+ box-shadow: 15px 15px 10px darkblue;
+}
+
+.CRAB {
+  width: 150px;           
+  height: auto;
+}
+table, th, td{
+    border: 5px solid;
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 1px solid;
+    padding: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    height: 40px;
+}
+td{
+    text-align: center;
+}
+tr:hover{
+    background-color: bisque;
+}
+tr{
+    background-color: pink;
+}
+tr:nth-child(1){
+    background-color: khaki;
+}
+ol{
+  list-style-type: upper-roman;
+  background-color:bisque;
+  border: 2px solid rgb(75, 54, 20);
+}
+ul{
+    background-color: bisque;
+    border: 2px solid rgb(75, 54, 20);
+}
+li{
+  background-color: rgb(117, 200, 223);
+  border:2px solid white;
+}
+li:hover{
+  background-color: rgb(99, 99, 122);
+}
